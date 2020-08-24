@@ -31,10 +31,11 @@ def register(cb):
 class AFKMod(loader.Module):
     """Provides a message saying that you are unavailable"""
     strings = {"name": "AFK",
-               "gone": "<b>I'm goin' AFK</b>",
-               "back": "<b>I'm no longer AFK</b>",
-               "afk": "<b>I'm AFK right now (since {} ago).</b>",
-               "afk_reason": "<b>I'm AFK right now (since {} ago).\nReason:</b> <i>{}</i>"}
+               "gone": "<b>Пока роботяги</b>",
+               "back": "<b>Я вернулся из небытья</b>",
+               "afk": "<b>я в небытье (since {} ago).</b>",
+               "afk_reason": "<b>я в небытье
+ (since {} ago).\nReason:</b> <i>{}</i>"}
 
     def config_complete(self):
         self.name = self.strings["name"]
