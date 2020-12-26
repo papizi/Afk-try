@@ -33,8 +33,8 @@ class AFKMod(loader.Module):
     strings = {"name": "AFK",
                "gone": "<b>F5</b>",
                "back": "<b>Я вернулся из небытья </b>",
-               "afk": "<b>Я в небытье  (уже {} ).</b>",
-               "afk_reason": "<b>Я в небытье  (уже {} ).\nReason:</b> <i>{}</i>"}
+               "afk": "<b>Я в небытье  (уже как {} ).</b>",
+               "afk_причина": "<b>Я в небытье  (уже как {} ).\nпричина:</b> <i>{}</i>"}
 
     def config_complete(self):
         self.name = self.strings["name"]
@@ -86,7 +86,7 @@ class AFKMod(loader.Module):
             if afk_state is True:
                 ret = self.strings["afk"].format(diff)
             elif afk_state is not False:
-                ret = self.strings["afk_reason"].format(diff, afk_state)
+                ret = self.strings["afk_причина"].format(diff, afk_state)
             await utils.answer(message, ret)
 
     def get_afk(self):
