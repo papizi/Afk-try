@@ -33,8 +33,8 @@ class AFKMod(loader.Module):
     strings = {"name": "AFK",
                "gone": "<b>F5</b>",
                "back": "<b>Я вернулся из небытья </b>",
-               "afk": "<b>Я в небытье  (since {} ago).</b>",
-               "afk_reason": "<b>Я в небытье  (since {} ago).\nReason:</b> <i>{}</i>"}
+               "afk": "<b>Я в небытье  (уже {} ).</b>",
+               "afk_reason": "<b>Я в небытье  (уже {} ).\nReason:</b> <i>{}</i>"}
 
     def config_complete(self):
         self.name = self.strings["name"]
