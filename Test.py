@@ -1,23 +1,22 @@
-# by @AliBaBoy
-
 from .. import loader, utils
 
-import logging
-import asyncio
-import time
 
-logger = logging.getLogger(__name__)
+def register(cb):
+    cb(ArtsMod())
 
-@loader.tds
-class HACKMod(loader.Module)
-	strings = {"name": "Slot"}
-	def __init__(self):
-		self.name = self.strings["name"]
-	def config_complete(self):
-		pass
-	async def hackcmd(self, message):("Слот 10М")
-			time.sleep(20.0)
-        async def hackcmd(self, message):("Слот 10М")
-  			time.sleep(20.0)
-        async def hackcmd(self, message):("Слот 10М")
-			time.sleep(20.0)
+
+class ArtsMod(loader.Module):
+    strings = {'name': 'Slot'}
+
+    async def vjuhcmd(self, message):
+        text = utils.get_args_raw(message)
+        if not text:
+            await message.edit('<b>Нету текста после команды :c</b>')
+            return
+        else:
+            vjuh =("слот 10М")
+            time.sleep(20.00)
+            vjuh =("слот 10М")
+            time.sleep(20.00)
+
+            
