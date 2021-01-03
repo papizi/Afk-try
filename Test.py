@@ -8,10 +8,22 @@ def register(cb):
 class ArtsMod(loader.Module):
     strings = {'name': 'Slot'}
 
-    async def vjuhcmd(self, message):
+    async def slotcmd(self, message):
         text = utils.get_args_raw(message)
         from asyncio import sleep
         await message.respond(text)
         await sleep(20)
         await message.respond(text)
+        await sleep(20)
+        await message.respond(text)
+        await sleep(20)
+        await message.respond(text)
+        await sleep(20)
+        await message.respond(text)
+        await sleep(20)
+        await message.respond(text)
+        await sleep(20)
+        await message.respond(text)
+
+            
             
