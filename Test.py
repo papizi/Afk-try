@@ -5,7 +5,7 @@ from time import sleep
 from userbot.events import register
 
 
-@register(outgoing=True, pattern='^.ff(?: |$)(.*)')
+@register(outgoing=True, pattern='^.slot(?: |$)(.*)')
 async def typewriter(typew):
     await typew.edit("Слот 20М")
     sleep(20.00)
