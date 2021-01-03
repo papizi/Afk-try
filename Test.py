@@ -10,13 +10,8 @@ class ArtsMod(loader.Module):
 
     async def vjuhcmd(self, message):
         text = utils.get_args_raw(message)
-        if not text:
-            await message.edit('<b>Нету текста после команды :c</b>')
-            return
-        else:
-            vjuh =("слот 10М")
-            time.sleep(20.00)
-            vjuh =("слот 10М")
-            time.sleep(20.00)
-
+        from asyncio import sleep
+        await message.respond(text)
+        await sleep(20)
+        await message.respond(text)
             
