@@ -31,7 +31,7 @@ def register(cb):
 class AFKMod(loader.Module):
     """Provides a message saying that you are unavailable"""
     strings = {"name": "AFK",
-               "gone": "<b>F5</b>",
+               "gone": "<b>я в афк</b>",
                "back": "<b>Я вернулся из небытья </b>",
                "afk": "<b>Я в небытье  (уже как {} ).</b>",
                "afk_причина": "<b>Я в небытье  (уже как {} ).\nпричина:</b> <i>{}</i>"}
